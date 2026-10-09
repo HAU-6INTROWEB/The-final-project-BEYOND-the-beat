@@ -60,6 +60,18 @@ Some CSS suggestions did not match the layout I wanted. I changed the styles and
 3. JavaScript Functionality
 Some of the suggested JavaScript code did not work correctly with my existing HTML. I had to review the code and make changes so the features would work properly.
 
+# Beyond The Beat
+
+[![Made with AI](https://img.shields.io/badge/Made_with-AI_assistance-blue)](AI-USAGE.md)
+
+---
+
+## 🤖 AI Usage & Attribution
+
+This project was built with assistance from **Google Gemini and Chatgpt** for help with dynamic JavaScript logic (search & routing), CSS layout debugging, and documentation formatting.
+
+For a full breakdown of generated code, manual modifications, and prompts used, see our [AI-USAGE.md](AI-USAGE.md).
+
 ### Case 1 - short title
 
 - **What it gave me:**
