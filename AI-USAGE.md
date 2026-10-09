@@ -11,9 +11,9 @@ looks exactly like what it is.
 
 At least six entries. One per real use. Every entry needs a commit link.
 
-### YYYY-MM-DD - short title
+### 2026-10-09 - Beyond the beat
 
-- **Tool:**
+- **Tool: Gemini, Chatgpt**
 - **What I asked for:**
 - **What it gave back:**
 - **What I kept, what I changed, and why:**
