@@ -1,32 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Final Project</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Beyond The Beat</title>
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-  <header>
-    <h1>My Final Project</h1>
-    <p>Group members: (add your names here)</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>
-        This is the starter page for your final project. Replace this content
-        with your own site. When you push to your repository and enable GitHub
-        Pages, this page goes live on the internet.
-      </p>
+
+  <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+            <img src="c:\Users\theag\FINAL(REPEAT)\final-project-beyond-the-beat\image\App.jpg" alt="Beyond The Beat Logo" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;">
+            <div>
+                BEYOND<br>
+                <span>THE BEAT</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="live.html">Live</a>
+            <a href="idols.html">Idols</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchWebsite()"></button>
+        </div>
+
+    </header>
+
+
+
+<!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-image" style="max-width: 480px; width: 100%;">
+            <a href="https://experience.sony-asia.com/ph/home/eventsdetails?EventID=493" target="_blank" rel="noopener noreferrer" aria-label="Beyond The Beat Sony Event">
+                <img src="c:\Users\theag\Downloads\BEYOND THE BEAT.jpg" alt="Beyond The Beat Sony Event Banner" style="width: 100%; height: auto; border-radius: 16px; display: block; object-fit: cover;">
+            </a>
+        </div>
+
+        <div class="hero-text">
+
+            <h1>Welcome To<br>Beyond The Beat!</h1>
+
+            <p>
+                Discover the latest music, live performances,
+                popular idols and everything happening beyond the beat.
+            </p>
+
+            <button class="main-button" onclick="learnMore()">
+                Explore Now
+            </button>
+
+        </div>
+
     </section>
-  </main>
 
-  <footer>
-    <p>Built for the finals project.</p>
-  </footer>
+ <!-- MUSIC -->
+<section id="music" class="section">
 
-  <script src="script.js"></script>
+    <h2>Music</h2>
+
+    <p>
+        Explore new songs, artists, albums and the latest
+        music trends.
+    </p>
+
+    <div class="cards">
+
+        <!-- Latest Hits: Opens external K-Pop comebacks site in a new tab -->
+        <a href="https://kpopofficial.com/kpop-comebacks/" target="_blank" rel="noopener noreferrer" class="card active" aria-label="Latest Hits: Discover the newest songs">
+            <div class="card-image" aria-hidden="true">🎧</div>
+            <h3>Latest Hits</h3>
+            <p>Discover the newest songs.</p>
+        </a>
+
+        <!-- Artists: Routes straight to your Idols section/page -->
+        <a href="#idols" class="card" aria-label="Artists: Meet your favorite artists">
+            <div class="card-image" aria-hidden="true">🎸</div>
+            <h3>Artists</h3>
+            <p>Meet your favorite artists.</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- LIVE -->
+<section id="live" class="section">
+
+    <h2>Live</h2>
+
+    <p>
+        Stay updated with concerts, performances and live events.
+    </p>
+
+    <div class="event">
+        <h3>Live Performance</h3>
+        <p>Check out upcoming performances and events.</p>
+        <!-- Links directly to your live.html page -->
+        <a href="live.html" class="main-button" style="text-decoration: none; display: inline-block;">View Events</a>
+    </div>
+
+</section>
+
+
+
+<!-- IDOLS -->
+<section id="idols" class="section">
+
+    <h2>Idols</h2>
+
+    <p>
+        Learn more about popular idols and performers.
+    </p>
+
+    <div class="cards">
+
+        <!-- Popular Idol: Goes to the idols page -->
+        <a href="idols.html" class="card" aria-label="Popular Idol: Artist information goes here">
+            <div class="card-image" aria-hidden="true">⭐</div>
+            <h3>Popular Idol</h3>
+            <p>Artist information goes here.</p>
+        </a>
+
+        <!-- Favorite Idol or Group: Goes directly to account.html -->
+        <a href="account.html" class="card" aria-label="Favorite Idol or Group: Manage your favorites in your account">
+            <div class="card-image" aria-hidden="true">🌟</div>
+            <h3>Favorite Idol or Group</h3>
+            <p>Tell us your favorite group or idol.</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="section">
+
+
+        <h2>Contacts</h2>
+
+
+        <p>Have questions? Send us a message.</p>
+
+
+        <form id="contactsForm">
+
+
+            <input type="text" placeholder="Your Name" required>
+
+
+            <input type="email" placeholder="Your Email" required>
+
+
+            <textarea placeholder="Your Message" required></textarea>
+
+
+            <button class="main-button" type="submit">
+                Send Message
+            </button>
+
+
+        </form>
+
+
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+
+        <h3>Beyond The Beat</h3>
+
+
+        <p>
+            Music • Live • Idols • Entertainment
+        </p>
+
+
+        <p>© 2026 Beyond The Beat</p>
+
+
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>
